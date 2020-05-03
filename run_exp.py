@@ -26,7 +26,7 @@ Examples:
     dimensionality of the Ackley function is 2 and, therefore, we need to
     specify it; the corresponding training data should be in
     "data/Ackley5_002.pt":
-    > python run_exp.py -p Branin -b 200 -r 2 -a UCB -m MeanLinearCV -d 5
+    > python run_exp.py -p Ackley -b 200 -r 2 -a UCB -m MeanLinearCV -d 5
 '''
 )
 
