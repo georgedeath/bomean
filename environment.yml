@@ -1,0 +1,20 @@
+name: gpmean
+channels:
+  - pytorch
+  - gpytorch
+dependencies:
+- pytorch
+- cpuonly
+- scipy
+- scikit-learn
+- numpy
+- swig
+- botorch
+- pip
+- pip:
+  - cma
+  - pyDOE2
+  - pygame
+  - box2d-py
+  - pyfoam
+  - numpy-stl
