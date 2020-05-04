@@ -1,8 +1,10 @@
 # What do you Mean? <br/> The Role of the Mean Function in Bayesian Optimisation
 
 This repository contains the Python3 code for the mean function experiments presented in:
-> George De Ath, Jonathan E. Fieldsend, and Richard M. Everson. 2020. What do you Mean? The Role of the Mean Function in Bayesian Optimisation. arXiv: 2004.08349 </br>
-> **Preprint:** <https://arxiv.org/abs/2004.08349>
+> George De Ath, Jonathan E. Fieldsend, and Richard M. Everson. 2020. What do you Mean? The Role of the
+Mean Function in Bayesian Optimisation. In Genetic and Evolutionary Computation Conference Companion (GECCO ’20 Companion), July 8–12, 2020, Cancún, Mexico. ACM, New York, NY, USA, 9 pages.</br>
+> **Paper**: https://doi.org/10.1145/3377929.3398118 </br>
+> **Preprint**: <https://arxiv.org/abs/2004.08349>
 
 The repository also contains all training data used for the initialisation of each of the 51 optimisation runs carried to evaluate each mean function, the optimisation results of each of the runs on each of the test problems evaluated, and a jupyter notebook to generate the results figures and tables in the paper.
 
@@ -18,11 +20,15 @@ The remainder of this document details:
 If you use any part of this code in your work, please cite:
 
 ```bibtex
-@misc{death:bomean,
+@inproceedings{death:bomean,
     title={What do you Mean? The Role of the Mean Function in Bayesian Optimisation},
-    author={George De Ath and Jonathan E. Fieldsend and Richard M. Everson},
-    year={2020},
-    eprint = {arXiv:2004.08349}
+    author = {George {De Ath} and Jonathan E. Fieldsend and Richard M. Everson},
+    year = {2020},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3377929.3398118},
+    doi = {10.1145/3377929.3398118},
+    booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference Companion},
 }
 ```
 
@@ -45,7 +51,7 @@ Training data shape: torch.Size([200, 2])
 
 Windows only: it may be necessary to also install [Visual C++ build tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/).
 
-**Optional instructions for the PitzDaily test problem:**</br>
+### Optional instructions for the PitzDaily test problem
 Now follow the linked instructions to [install OpenFOAM5](https://openfoamwiki.net/index.php/Installation/Linux/OpenFOAM-5.x/Ubuntu) (this will take 30min - 3hours to install). Note that this has only been tested with the Ubuntu 12.04 and 18.04 instructions. Once this has been successfully installed, the command `of5x` has to be ran before the PitzDaily test problem can be evaluated.
 
 Finally, compile the pressure calculation function and check that the test problem works correctly:
