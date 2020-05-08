@@ -435,7 +435,7 @@ class Schubert:
     http://www.sfu.ca/~ssurjano/shubert.html
     """
 
-    def __init__(self, d=2):
+    def __init__(self):
         self.dim = d
         self.lb = np.full(self.dim, -5.12)
         self.ub = np.full(self.dim, 5.12)
@@ -899,7 +899,7 @@ class DixonPrice:
         self.ub = np.full(self.dim, 10.)
 
         # function parameters
-        self.i = np.arange(1, self.dim + 1, dtype='float').reshape(1, self.dim)
+        self.i = np.arange(2, self.dim + 1, dtype='float').reshape(1, self.dim-1)
 
         # optimum value(s)
         temp = np.arange(1, self.dim + 1)
